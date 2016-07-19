@@ -1,6 +1,6 @@
 //
 //  main.m
-//  LPAutoScrollView
+//  LPAutoScrollViewExplame
 //
 //  Created by Allen on 16/7/19.
 //  Copyright © 2016年 watermelon_lp. All rights reserved.
