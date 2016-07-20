@@ -10,6 +10,7 @@
 
 #import "LPAutoScrollView.h"
 #import "LPView.h"
+#import "LPImageContentView.h"
 
 @interface ViewController () <LPAutoScrollViewDatasource, LPAutoScrollViewDelegate>
 
@@ -45,7 +46,7 @@
     
     // 纯代码和xib随意切换
     //    [scrollView lp_registerNib:[UINib nibWithNibName:NSStringFromClass([LPView class]) bundle:nil]];
-    [scrollView lp_registerClass:[LPView class]];
+    [scrollView lp_registerClass:[LPImageContentView class]];
     
     
     _scrollView = scrollView;
@@ -66,8 +67,8 @@
     return self.titlesArray.count;
 }
 
-- (void)lp_scrollView:(LPAutoScrollView *)scrollView newsDataAtIndex:(NSUInteger)index forContentView:(LPView *)contentView {
-    contentView.title = self.titlesArray[index];
+- (void)lp_scrollView:(LPAutoScrollView *)scrollView newsDataAtIndex:(NSUInteger)index forContentView:(LPImageContentView *)contentView {
+    
 }
 
 - (void)lp_scrollView:(LPAutoScrollView *)scrollView didTappedContentViewAtIndex:(NSUInteger)index {
