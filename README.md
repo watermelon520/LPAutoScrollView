@@ -1,8 +1,9 @@
 # LPAutoScrollView
 
-极简的自定义自动轮播框架
+极简的自定义自动无限轮播框架
 
-###使用方法
+### 使用方法
+
 * 直接下载压缩包，将LPAutoScrollView导入你的项目，`#import "LPAutoScrollView.h"`
 * 使用cocoapods `pod 'LPAutoScrollView'`
 
@@ -12,6 +13,7 @@
 * 没有侵入性，使用自定义的view
 * 自定的view支持纯代码或者xib
 * 采用类似UITableView的方式构建框架
+* view重用机制的无限轮播，性能优异
 * 使用简易
 
 ### 使用注意事项
