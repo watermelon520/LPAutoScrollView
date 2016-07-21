@@ -20,8 +20,8 @@
 
 * 自定义view请继承 LPContentView，并且向LPAutoScrollView注册。
 * 使用代理方法赋值，在`- (void)lp_scrollView:(LPAutoScrollView *)scrollView newsDataAtIndex:(NSUInteger)index forContentView:(LPContentView *)contentView` 方法中，请自行更换LPContentView 为你自定义的view，然后模型赋值。
-* 两种滚动模式，默认竖直 `LPAutoScrollViewStyleVertical,`
-
-  `LPAutoScrollViewStyleHorizontal,`
 
 
+### PS
+
+* 使用过程有问题欢迎issue我
