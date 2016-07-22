@@ -61,9 +61,16 @@
     scrollView.lp_autoScrollInterval = 1;
     
     
-    // 注册内容view   纯代码和xib随意切换
-    [scrollView lp_registerNib:[UINib nibWithNibName:NSStringFromClass([LPView class]) bundle:nil]];
-//    [scrollView lp_registerClass:[LPView class]];
+    //
+    /**
+     *  注册内容view
+     *
+     *  自定义view请继承 LPContentView
+     *
+     *  纯代码和xib随意切换
+     */
+//    [scrollView lp_registerNib:[UINib nibWithNibName:NSStringFromClass([LPView class]) bundle:nil]];
+    [scrollView lp_registerClass:[LPView class]];
     
     
     _scrollView = scrollView;
@@ -80,7 +87,7 @@
     self.scrollView.frame = CGRectMake(0, 50, self.view.frame.size.width, 300);
 }
 
-#pragma mark - LPAutoScrollViewDatasource & LPAutoScrollViewDelegate
+#pragma mark - LPAutoScrollViewDatasource
 
 - (NSUInteger)lp_numberOfNewsDataInScrollView:(LPAutoScrollView *)scrollView {
     return self.titlesArray.count;
@@ -93,6 +100,8 @@
 - (void)lp_scrollView:(LPAutoScrollView *)scrollView newsDataAtIndex:(NSUInteger)index forContentView:(LPView *)contentView {
     contentView.title = self.titlesArray[index];
 }
+
+#pragma mark LPAutoScrollViewDelegate
 
 - (void)lp_scrollView:(LPAutoScrollView *)scrollView didTappedContentViewAtIndex:(NSUInteger)index {
     NSLog(@"%@", self.titlesArray[index]);
