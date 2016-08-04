@@ -337,6 +337,12 @@
 
 #pragma mark- getters & setters
 
+- (void)setLp_shouldAutoScroll:(BOOL)lp_shouldAutoScroll {
+    _lp_shouldAutoScroll = lp_shouldAutoScroll;
+    
+    [self dealAutoScrollTimer];
+}
+
 - (void)setLp_autoScrollInterval:(CGFloat)lp_autoScrollInterval {
     _lp_autoScrollInterval = lp_autoScrollInterval > 1 ? lp_autoScrollInterval : 1.0;
 }

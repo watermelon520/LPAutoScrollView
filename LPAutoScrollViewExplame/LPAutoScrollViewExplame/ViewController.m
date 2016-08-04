@@ -58,7 +58,7 @@
     scrollView.lp_stopForSingleDataSourceCount = YES;
     
     //滚动市场
-    scrollView.lp_autoScrollInterval = 1;
+    scrollView.lp_autoScrollInterval = 3;
     
     
     //
