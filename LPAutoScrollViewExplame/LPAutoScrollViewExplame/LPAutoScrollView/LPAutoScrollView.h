@@ -37,6 +37,9 @@ typedef enum : NSUInteger {
 @property (nonatomic, weak, nullable) IBOutlet id<LPAutoScrollViewDatasource> lp_scrollDataSource;
 @property (nonatomic, weak, nullable) IBOutlet id<LPAutoScrollViewDelegate> lp_scrollDelegate;
 
+/**
+ *  防止轮播器在不显示的时候也滚动，需要在外界控制器里根据控制器的显示，更改这个属性
+ */
 @property (nonatomic, assign) IBInspectable BOOL lp_shouldAutoScroll;//是否自动轮播，默认YES
 @property (nonatomic, assign) IBInspectable CGFloat lp_autoScrollInterval;//自动轮播时间间隔，默认5s,不得小于1s
 
