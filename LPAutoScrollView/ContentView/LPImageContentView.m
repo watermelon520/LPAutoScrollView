@@ -10,8 +10,6 @@
 
 @interface LPImageContentView ()
 
-@property (nonatomic, weak) UIImageView *imageView;
-
 @end
 
 
@@ -24,21 +22,19 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        [self setUpInit];
+    }
+    return self;
+}
+
 - (void)setUpInit {
     
     UIImageView *imageView = [[UIImageView alloc] init];
     self.imageView = imageView;
     [self addSubview:imageView];
     imageView.contentMode = UIViewContentModeScaleAspectFill;
-    
-}
-
-- (void)setImage:(UIImage *)image {
-    _image = image;
-    
-    if (image) {
-        self.imageView.image = image;
-    }
     
 }
 

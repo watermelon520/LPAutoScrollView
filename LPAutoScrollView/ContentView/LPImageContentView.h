@@ -10,6 +10,6 @@
 
 @interface LPImageContentView : LPContentView
 
-@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, weak, readonly) UIImageView *imageView;
 
 @end
