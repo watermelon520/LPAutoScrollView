@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name                 = "LPAutoScrollView"
-s.version              = "1.0.5"
+s.version              = "1.0.6"
 s.summary              = "An easy way to use auto scroll views"
 s.homepage             = "https://github.com/watermelon520/LPAutoScrollView"
 s.license              = { :type => "MIT", :file => "LICENSE" }
