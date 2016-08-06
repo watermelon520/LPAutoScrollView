@@ -30,6 +30,7 @@
 
 @implementation LPAutoScrollView {
     BOOL _isInitLayoutSubviews;
+    BOOL _isDead;
 }
 
 #pragma mark- life cycle
@@ -61,9 +62,9 @@
     self.showsHorizontalScrollIndicator = NO;
     self.showsVerticalScrollIndicator   = NO;
     
-    self.lp_shouldAutoScroll   = YES;
-    self.lp_autoScrollInterval = 5.0;
-    self.totalPages      = 0;
+    _lp_shouldAutoScroll   = YES;
+    _lp_autoScrollInterval = 5.0;
+    _totalPages      = 0;
     _lp_style = LPAutoScrollViewStyleVertical;
     
     self.delegate = self;
@@ -151,6 +152,7 @@
 }
 
 - (void)dealloc {
+    _isDead = YES;
     [self.autoScrollTimer invalidate];
 }
 
@@ -317,6 +319,7 @@
     
     if (self.lp_shouldAutoScroll) {
         
+        if (!self.totalPages) return;
         if (self.lp_stopForSingleDataSourceCount && self.totalPages == 1) return;
         
         [self setUpAutoScrollTimer];
@@ -353,7 +356,9 @@
 }
 
 - (void)setDelegate:(id<UIScrollViewDelegate>)delegate {
-    [super setDelegate:self];
+    if (!_isDead) {
+        [super setDelegate:self];
+    }
 }
 
 @end
