@@ -33,6 +33,7 @@
     
     UIImageView *imageView = [[UIImageView alloc] init];
     _imageView = imageView;
+    imageView.clipsToBounds = YES;
     [self addSubview:imageView];
     imageView.contentMode = UIViewContentModeScaleAspectFill;
     

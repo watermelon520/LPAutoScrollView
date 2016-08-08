@@ -182,12 +182,12 @@
     if (self.lp_style == LPAutoScrollViewStyleVertical) {
         
         offsetPoint = CGPointMake(0, self.bounds.size.height);
-        page = offsetY / CGRectGetHeight(self.frame);
+        page = (offsetY / CGRectGetHeight(self.frame) + 0.5);
         
     } else if (self.lp_style == LPAutoScrollViewStyleHorizontal) {
         
         offsetPoint = CGPointMake(self.bounds.size.width, 0);
-        page = offsetX / CGRectGetWidth(self.frame);
+        page = (offsetX / CGRectGetWidth(self.frame) + 0.5);
     }
     
     if (page == 0) {
