@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9FA3AF2B1D58308100645100 /* LPImageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3AF241D58308100645100 /* LPImageContentView.m */; };
-		9FA3AF2C1D58308100645100 /* LPAutoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3AF261D58308100645100 /* LPAutoScrollView.m */; };
-		9FA3AF2D1D58308100645100 /* LPContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3AF281D58308100645100 /* LPContentView.m */; };
-		9FA3AF2E1D58308100645100 /* LPTimerWeakTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3AF2A1D58308100645100 /* LPTimerWeakTarget.m */; };
 		9FB21BA81D3E39A800FAB298 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB21BA71D3E39A800FAB298 /* main.m */; };
 		9FB21BAB1D3E39A800FAB298 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB21BAA1D3E39A800FAB298 /* AppDelegate.m */; };
 		9FB21BAE1D3E39A800FAB298 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB21BAD1D3E39A800FAB298 /* ViewController.m */; };
@@ -19,17 +15,13 @@
 		9FB21BB61D3E39A800FAB298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB21BB41D3E39A800FAB298 /* LaunchScreen.storyboard */; };
 		9FB21BCA1D3E3A8E00FAB298 /* LPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB21BC81D3E3A8E00FAB298 /* LPView.m */; };
 		9FB21BCB1D3E3A8E00FAB298 /* LPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FB21BC91D3E3A8E00FAB298 /* LPView.xib */; };
+		9FC96E2A1D94B5D9004A5949 /* LPImageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC96E231D94B5D9004A5949 /* LPImageContentView.m */; };
+		9FC96E2B1D94B5D9004A5949 /* LPAutoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC96E251D94B5D9004A5949 /* LPAutoScrollView.m */; };
+		9FC96E2C1D94B5D9004A5949 /* LPContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC96E271D94B5D9004A5949 /* LPContentView.m */; };
+		9FC96E2D1D94B5D9004A5949 /* LPTimerWeakTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC96E291D94B5D9004A5949 /* LPTimerWeakTarget.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9FA3AF231D58308100645100 /* LPImageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPImageContentView.h; sourceTree = "<group>"; };
-		9FA3AF241D58308100645100 /* LPImageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPImageContentView.m; sourceTree = "<group>"; };
-		9FA3AF251D58308100645100 /* LPAutoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPAutoScrollView.h; sourceTree = "<group>"; };
-		9FA3AF261D58308100645100 /* LPAutoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPAutoScrollView.m; sourceTree = "<group>"; };
-		9FA3AF271D58308100645100 /* LPContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPContentView.h; sourceTree = "<group>"; };
-		9FA3AF281D58308100645100 /* LPContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPContentView.m; sourceTree = "<group>"; };
-		9FA3AF291D58308100645100 /* LPTimerWeakTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPTimerWeakTarget.h; sourceTree = "<group>"; };
-		9FA3AF2A1D58308100645100 /* LPTimerWeakTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPTimerWeakTarget.m; sourceTree = "<group>"; };
 		9FB21BA31D3E39A800FAB298 /* LPAutoScrollViewExplame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPAutoScrollViewExplame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB21BA71D3E39A800FAB298 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9FB21BA91D3E39A800FAB298 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +35,14 @@
 		9FB21BC71D3E3A8E00FAB298 /* LPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPView.h; sourceTree = "<group>"; };
 		9FB21BC81D3E3A8E00FAB298 /* LPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPView.m; sourceTree = "<group>"; };
 		9FB21BC91D3E3A8E00FAB298 /* LPView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPView.xib; sourceTree = "<group>"; };
+		9FC96E221D94B5D9004A5949 /* LPImageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPImageContentView.h; sourceTree = "<group>"; };
+		9FC96E231D94B5D9004A5949 /* LPImageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPImageContentView.m; sourceTree = "<group>"; };
+		9FC96E241D94B5D9004A5949 /* LPAutoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPAutoScrollView.h; sourceTree = "<group>"; };
+		9FC96E251D94B5D9004A5949 /* LPAutoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPAutoScrollView.m; sourceTree = "<group>"; };
+		9FC96E261D94B5D9004A5949 /* LPContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPContentView.h; sourceTree = "<group>"; };
+		9FC96E271D94B5D9004A5949 /* LPContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPContentView.m; sourceTree = "<group>"; };
+		9FC96E281D94B5D9004A5949 /* LPTimerWeakTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPTimerWeakTarget.h; sourceTree = "<group>"; };
+		9FC96E291D94B5D9004A5949 /* LPTimerWeakTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPTimerWeakTarget.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,29 +56,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9FA3AF211D58308100645100 /* LPAutoScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				9FA3AF221D58308100645100 /* ContentView */,
-				9FA3AF251D58308100645100 /* LPAutoScrollView.h */,
-				9FA3AF261D58308100645100 /* LPAutoScrollView.m */,
-				9FA3AF271D58308100645100 /* LPContentView.h */,
-				9FA3AF281D58308100645100 /* LPContentView.m */,
-				9FA3AF291D58308100645100 /* LPTimerWeakTarget.h */,
-				9FA3AF2A1D58308100645100 /* LPTimerWeakTarget.m */,
-			);
-			path = LPAutoScrollView;
-			sourceTree = "<group>";
-		};
-		9FA3AF221D58308100645100 /* ContentView */ = {
-			isa = PBXGroup;
-			children = (
-				9FA3AF231D58308100645100 /* LPImageContentView.h */,
-				9FA3AF241D58308100645100 /* LPImageContentView.m */,
-			);
-			path = ContentView;
-			sourceTree = "<group>";
-		};
 		9FB21B9A1D3E39A800FAB298 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +75,7 @@
 		9FB21BA51D3E39A800FAB298 /* LPAutoScrollViewExplame */ = {
 			isa = PBXGroup;
 			children = (
-				9FA3AF211D58308100645100 /* LPAutoScrollView */,
+				9FC96E201D94B5D9004A5949 /* LPAutoScrollView */,
 				9FB21BA91D3E39A800FAB298 /* AppDelegate.h */,
 				9FB21BAA1D3E39A800FAB298 /* AppDelegate.m */,
 				9FB21BAC1D3E39A800FAB298 /* ViewController.h */,
@@ -121,6 +98,29 @@
 				9FB21BA71D3E39A800FAB298 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FC96E201D94B5D9004A5949 /* LPAutoScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9FC96E211D94B5D9004A5949 /* ContentView */,
+				9FC96E241D94B5D9004A5949 /* LPAutoScrollView.h */,
+				9FC96E251D94B5D9004A5949 /* LPAutoScrollView.m */,
+				9FC96E261D94B5D9004A5949 /* LPContentView.h */,
+				9FC96E271D94B5D9004A5949 /* LPContentView.m */,
+				9FC96E281D94B5D9004A5949 /* LPTimerWeakTarget.h */,
+				9FC96E291D94B5D9004A5949 /* LPTimerWeakTarget.m */,
+			);
+			path = LPAutoScrollView;
+			sourceTree = "<group>";
+		};
+		9FC96E211D94B5D9004A5949 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				9FC96E221D94B5D9004A5949 /* LPImageContentView.h */,
+				9FC96E231D94B5D9004A5949 /* LPImageContentView.m */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,12 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FB21BAE1D3E39A800FAB298 /* ViewController.m in Sources */,
-				9FA3AF2D1D58308100645100 /* LPContentView.m in Sources */,
-				9FA3AF2E1D58308100645100 /* LPTimerWeakTarget.m in Sources */,
+				9FC96E2C1D94B5D9004A5949 /* LPContentView.m in Sources */,
+				9FC96E2D1D94B5D9004A5949 /* LPTimerWeakTarget.m in Sources */,
 				9FB21BAB1D3E39A800FAB298 /* AppDelegate.m in Sources */,
 				9FB21BCA1D3E3A8E00FAB298 /* LPView.m in Sources */,
-				9FA3AF2B1D58308100645100 /* LPImageContentView.m in Sources */,
-				9FA3AF2C1D58308100645100 /* LPAutoScrollView.m in Sources */,
+				9FC96E2A1D94B5D9004A5949 /* LPImageContentView.m in Sources */,
+				9FC96E2B1D94B5D9004A5949 /* LPAutoScrollView.m in Sources */,
 				9FB21BA81D3E39A800FAB298 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

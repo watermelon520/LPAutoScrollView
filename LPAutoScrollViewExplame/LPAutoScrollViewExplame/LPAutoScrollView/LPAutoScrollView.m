@@ -29,7 +29,7 @@
 @end
 
 @implementation LPAutoScrollView {
-    BOOL _isInitLayoutSubviews;
+    CGRect _lastFrame;
     BOOL _isDead;
 }
 
@@ -109,9 +109,7 @@
     
     self.appear = YES;
     
-    NSUInteger count = [self.lp_scrollDataSource lp_numberOfNewsDataInScrollView:self];
-    
-    if (count) {
+    if ([self.lp_scrollDataSource lp_numberOfNewsDataInScrollView:self]) {
         
         [self dealAutoScrollTimer];
     }
@@ -119,7 +117,7 @@
 
 - (void)layoutSubviews {
     
-    if (!_isInitLayoutSubviews) {
+    if (!CGRectEqualToRect(self.frame, _lastFrame)) {
         
         if (self.lp_style == LPAutoScrollViewStyleVertical) {
             
@@ -145,7 +143,8 @@
             
         }
         
-        _isInitLayoutSubviews = YES;
+        _lastFrame = self.frame;
+        
     }
     
     [super layoutSubviews];
