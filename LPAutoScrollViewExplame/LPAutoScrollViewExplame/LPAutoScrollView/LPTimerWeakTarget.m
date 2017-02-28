@@ -22,17 +22,12 @@
     return self;
 }
 
-- (void)timerDidFire:(NSTimer *)timer
-{
-    if(_target)
-    {
+- (void)timerDidFire:(NSTimer *)timer {
+    if(_target) {
         if ([_target respondsToSelector:_selector]) {
-            
             [_target performSelector:_selector withObject:timer];
         }
-    }
-    else
-    {
+    } else {
         [timer invalidate];
     }
 }

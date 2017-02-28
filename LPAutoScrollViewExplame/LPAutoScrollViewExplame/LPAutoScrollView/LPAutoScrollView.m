@@ -61,13 +61,14 @@
     self.pagingEnabled = YES;
     self.showsHorizontalScrollIndicator = NO;
     self.showsVerticalScrollIndicator   = NO;
+    self.delegate = self;
+    self.bounces = NO;
     
-    _lp_shouldAutoScroll   = YES;
+    _lp_shouldAutoScroll = YES;
     _lp_autoScrollInterval = 5.0;
-    _totalPages      = 0;
+    _totalPages = 0;
     _lp_style = LPAutoScrollViewStyleVertical;
     
-    self.delegate = self;
 }
 
 - (void)setUpContentView {
@@ -144,7 +145,6 @@
         }
         
         _lastFrame = self.frame;
-        
     }
     
     [super layoutSubviews];

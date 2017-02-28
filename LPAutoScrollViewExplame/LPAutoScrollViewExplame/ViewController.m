@@ -57,7 +57,7 @@
     //数据数组为1时是否关闭滚动
     scrollView.lp_stopForSingleDataSourceCount = YES;
     
-    //滚动市场
+    //滚动时长
     scrollView.lp_autoScrollInterval = 3;
     
     
