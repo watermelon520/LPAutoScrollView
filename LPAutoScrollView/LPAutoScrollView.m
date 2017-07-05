@@ -61,6 +61,7 @@
     self.pagingEnabled = YES;
     self.showsHorizontalScrollIndicator = NO;
     self.showsVerticalScrollIndicator   = NO;
+    self.bounces = NO;
     
     _lp_shouldAutoScroll   = YES;
     _lp_autoScrollInterval = 5.0;
