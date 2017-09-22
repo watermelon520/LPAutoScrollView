@@ -4,7 +4,7 @@
 //
 //  Created by Allen on 16/7/19.
 //  Copyright © 2016年 watermelon_lp. All rights reserved.
-//
+// 
 
 #import "LPAutoScrollView.h"
 
@@ -175,7 +175,7 @@
     //计算当前实际应该显示第几页的view
     CGFloat offsetY = self.contentOffset.y;
     CGFloat offsetX = self.contentOffset.x;
-    NSInteger page;
+    NSInteger page = 0;
     
     CGPoint offsetPoint = CGPointZero;
     

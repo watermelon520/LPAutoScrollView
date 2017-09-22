@@ -27,8 +27,11 @@
     if(_target)
     {
         if ([_target respondsToSelector:_selector]) {
-            
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Warc-performSelector-leaks"
             [_target performSelector:_selector withObject:timer];
+#pragma clang diagnostic pop
+            
         }
     }
     else
